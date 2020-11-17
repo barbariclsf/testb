@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.w {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav ul li {
+    margin-right: 20px;
+}
+.title {
+    font-size: 24px;
+    margin-right: 60px;
+}
+.search {
+    margin-left: 200px;
+    height: 25px;
+    border-radius: 7px;
+}
+.publish {
+    width: 1200px;
+    height: 990px;
+    margin:60px auto;
+}

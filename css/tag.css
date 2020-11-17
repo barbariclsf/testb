@@ -1,0 +1,213 @@
+body {
+    background-color: #efefef;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.w {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav ul li {
+    margin-right: 20px;
+}
+.title {
+    font-size: 24px;
+    margin-right: 60px;
+}
+.search {
+    margin-left: 200px;
+    height: 25px;
+    border-radius: 7px;
+}
+.aritcal {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.sort {
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.aritcal h3 {
+    color: #2D93CA;
+    float: left;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.aritcal .num {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+
+}
+.aritcaldetail {
+    margin-top: 40px;
+    height: 190px;
+    border-top: 1px solid #9e9e9e;
+}
+.aritcaldetail .articalfont {
+    float: left;
+    margin: 20px 20px;
+    width: 450px;
+    height: 150px;
+    font-size: 16px;
+    text-indent: 2em;
+
+
+}
+.aritcaldetail .artcalimg {
+    float: left;
+    margin: 20px 40px;
+    width: 230px;
+    height: 150px;
+    border-radius: 5px;
+}
+.aritcaldetail .author {
+    float: left;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+}
+.aritcaldetail .authornmae {
+    line-height: 30px;
+    margin-left: 10px;
+    color: #5754ff;
+    margin-right: 15px;
+
+}
+.aritcaldetail .date {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.aritcaldetail .look {
+    width: 20px;
+    height: 10px;
+}
+.aritcaldetail span {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.sort>div {
+    height: 40px;
+
+}
+.sort h3 {
+    float: left;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+.sort .more {
+    float: right;
+    text-decoration: none;
+    color: #2D93CA;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.sort ul {
+    margin: 20px 10px;
+    width: 280px;
+    height: 198px;
+    /*border: 1px solid #c3c3c3;*/
+    border-bottom: 0px;
+}
+.sort ul li {
+    list-style: none;
+    width: 280px;
+    height: 40px;
+    /*border-bottom: 1px solid #c3c3c3;*/
+    font-size: 16px;
+    line-height: 32px;
+    text-indent: 1em;
+}
+.sort ul li a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 25px;
+    border-radius: 50px;
+    background-color: #4c95f0;
+
+}
+.sort ul li a span {
+    margin-left: -5px;
+}
+.person {
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.person .detail {
+    margin-left: 10px;
+    width: 260px;
+    height: 130px;
+
+
+}
+.person .detail img {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.person span {
+    line-height: 70px;
+    margin-left: 25px;
+    font-size: 18px;
+    color: #2D93CA;
+
+}
+.person .gunazhu {
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.person p {
+    margin: 10px 10px;
+
+    color: #d2d2d2;
+}
+.biaoqian {
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 170px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.box {
+    margin: 20px;
+    width: 260px;
+    height: 150px;
+
+}
+.box h2 {
+    font-weight: 700;
+}
+.box li {
+    float: left;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+

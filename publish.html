@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布博客</title>
+    <script src="layui/layui.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/publish.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="nav w">
+    <ul class="layui-nav layui-bg-blue">
+        <li class="layui-nav-item "><a href="" class="title">BLOG</a></li>
+        <li class="layui-nav-item "><a href=""><i class="layui-icon layui-icon-home"></i> 首页</a></li>
+        <li class="layui-nav-item"><a href="sort.html"><i class="layui-icon layui-icon-theme"></i>分类</a></li>
+        <li class="layui-nav-item"><a href="tag.html"><i class="layui-icon layui-icon-note"></i>标签</a></li>
+        <li class="layui-nav-item layui-this"><a href="publish.html"><i class="layui-icon layui-icon-edit"></i>发布博客</a></li>
+        <li class="layui-nav-item"><a href=""><i class="layui-icon layui-icon-username"></i>个人</a></li>
+        <input type="search" placeholder="输入搜索内容" class="search">
+    </ul>
+</div>
+<div class="publish">
+    
+   <textarea class="layui-textarea" id="LAY_demo1" style="display: none;"></textarea>
+
+<!--    <div class="site-demo-button" style="margin-top: 20px;">-->
+<!--        <button class="layui-btn site-demo-layedit" data-type="content">获取编辑器内容</button>-->
+<!--        <button class="layui-btn site-demo-layedit" data-type="text">获取编辑器纯文本内容</button>-->
+<!--        <button class="layui-btn site-demo-layedit" data-type="selection">获取编辑器选中内容</button>-->
+<!--    </div>-->
+    <button type="button" class="layui-btn layui-btn-warm" style="float: right;margin-top: 10px;width: 100px">
+        发布
+    </button>
+
+
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use('layedit', function(){
+            var layedit = layui.layedit
+                ,$ = layui.jquery;
+
+            //构建一个默认的编辑器
+            var index = layedit.build('LAY_demo1');
+
+            //编辑器外部操作
+            var active = {
+                content: function(){
+                    alert(layedit.getContent(index)); //获取编辑器内容
+                }
+                ,text: function(){
+                    alert(layedit.getText(index)); //获取编辑器纯文本内容
+                }
+                ,selection: function(){
+                    alert(layedit.getSelection(index));
+                }
+            };
+
+            $('.site-demo-layedit').on('click', function(){
+                var type = $(this).data('type');
+                active[type] ? active[type].call(this) : '';
+            });
+
+
+        });
+    </script>
+</div>
+</body>
+</html>
